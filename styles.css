@@ -216,7 +216,7 @@ main{
     background-color: #8d99ae;
 }
 
-#entry2Song{
+#entry2Song.entrySong{
     background-color:  hsla(0, 0%, 12.5%);
 }
 
@@ -228,6 +228,9 @@ main{
     padding-left: 20%;
     padding-right: 20%;
     padding-bottom: 40px;
+    background-image: url(./resources/backgroundCreate.jpg);
+    background-position: fixed;
+    color: white;
 }
 
 #createNewEntry form{
@@ -264,3 +267,8 @@ main{
     font-size: 18pt;
 }
 
+@media only screen and (max-width: 600px){
+    p{
+        font-size: 14pt;
+    }
+}
