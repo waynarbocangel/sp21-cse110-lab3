@@ -1,31 +1,47 @@
+/* General styles */
 body{
     margin: 0;
     padding: 0;
+    background-color: rgba(237, 242, 244, 1);
 }
 
-/* Entry Index layout styles */
+*{
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+/* Entry Index styles */
 header{
     text-align: center;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-top: -50px;
+    padding-left: 20%;
+    padding-right: 20%;
     width: 60%;
+    padding-bottom: 40px;
+    background-color: #2b2d42;
+    color: white;
 }
 
 #pageTitle{
-    margin-top: 80px;
+    padding-top: 40px;
     font-size: 50pt;
 }
 
 header h2{
-    margin: -20px auto 50px auto;
+    margin: -20px auto 0 auto;
 }
 
 nav{
+    background-color: #8d99ae;
     width: 100%;
+    margin-top: 0;
+    padding-top: 20px;
+    padding-bottom: 5px;
     text-align: center;
     position: sticky;
-    top: -30px;
+    top: -60px;
     justify-content: center;
+    color: white
 }
 
 nav ul{
@@ -41,6 +57,29 @@ nav ul{
 nav ul li{
     padding: 15px 45px;
     
+}
+
+nav ul a:hover{
+    background-color: #ef233c;
+}
+
+nav ul a:active{
+    background-color: #ef233c;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    background-color: #d90429;
+    margin: auto 10px;
+    min-width: 160px;
+    border-radius: 6px;
+}
+
+main{
+    padding-top: 40px;
 }
 
 /* Entry layout styles */
@@ -142,7 +181,7 @@ nav ul li{
 #createNewEntry fieldset{
     margin: 0;
     padding: 0;
-    border: 0;
+    border-width: 0;
 }
 
 #createNewEntryContent{
