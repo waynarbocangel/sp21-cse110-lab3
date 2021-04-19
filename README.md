@@ -1,1 +1,1 @@
-Link to site: https://github.com/waynarbocangel/sp21-cse110-lab3.git
+Link to site: https://waynarbocangel.github.io/sp21-cse110-lab3/
