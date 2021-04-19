@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Lab 2</title>
+	<title>Lab 3</title>
 	<meta charset="utf-8" />
 	<link rel="icon" href="./resources/favicon_io/favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="./styles.css" type="text/css" />
 </head>
 <body>
 	<header>
@@ -20,13 +21,16 @@
 	</nav>
 	<main>
 		<hr />
-		<div id="day1">
-			<h2>Entry 1</h2>
-			<h3>My first time writting a Journal</h3>
-			<p><strong>Thursday</strong>, April 8th, 2021</p>
-			<section>
+		<div id="day1" class="entry">
+			<div class="entryHeader">
+				<h2>Entry 1</h2>
+				<p class="date"><strong>Thursday</strong>, April 8th, 2021</p>
+				<h3 class="subtitle">My first time writting a Journal</h3>
+			</div>
+			<br />
+			<section class="entryList">
 				<div>
-					<h3>Highlights:</h3>
+					<h3>Highlights</h3>
 					<ul>
 						<li>Learned about the project for CSE 110</li>
 						<li>Was able to play the spider crawl excersice at 240bpm in my guitar</li>
@@ -34,7 +38,7 @@
 					</ul>
 				</div>
 				<div>
-					<h3>Tasks:</h3>
+					<h3>Tasks</h3>
 					<ol>
 						<li>
 							<label for="task1day1">Reapair toolbar in editing menu of Alexandria.</label>
@@ -51,37 +55,42 @@
 					</ol>
 				</div>
 			</section>
-			<br />
-			<section>
-				<h3>What happened today!</h3>
-				<p>Today was an <em><b>intense</b></em> day! I thought it would never end. I had to finish the implementation of the toolbar in my app Alexandria, but I realized that I had to design the bar progamatically instead of through an Xcode storyboard. Doing so has taken me 6 hours so far and today is the second day I'll have to go to sleep because I was not able to finish the task on time. Developing software is challenging at every step, specially when someone is doing it all by himself. Still, knowing that whatever you write in your text editor can eventually become usefull to someone else is extremely inspiring. Software Engineering is like a day that is rainy and sunny at the same time, which is funny since that is what happend to day in my hometown La Paz, Bolivia. Here's a video of this <i>not so unusual</i> event:</p>
-				<details>
-					<summary>Video of rain in La Paz</summary>
-					<video controls width="900">
-						<source src="./resources/sunny_rainy.mp4" type="video/mp4" />
-					</video>
-				</details>
-			</section>
-			<br />
-			<section>
-				<h3>Song of the Day!</h3>
-				<p><strong>Identikit</strong> by <strong><em>Radiohead</em></strong> from the album <strong>A Moon Shaped Pool</strong></p>
-				<p>Rating: <strong>5 out of 5</strong></p>
-				<img src="./resources/a_moon_shaped_pool.jpg" alt="A Moon Shaped Pool Album Cover" width="400" />
+			<div>
 				<br />
-				<audio controls>
-					<source src="./resources/Identikit.mp3" type="audio/mpeg">
-				</audio>
-			</section>
+				<section class="entryMain">
+					<h3>What happened today!</h3>
+					<p>Today was an <em><b>intense</b></em> day! I thought it would never end. I had to finish the implementation of the toolbar in my app Alexandria, but I realized that I had to design the bar progamatically instead of through an Xcode storyboard. Doing so has taken me 6 hours so far and today is the second day I'll have to go to sleep because I was not able to finish the task on time. Developing software is challenging at every step, specially when someone is doing it all by himself. Still, knowing that whatever you write in your text editor can eventually become usefull to someone else is extremely inspiring. Software Engineering is like a day that is rainy and sunny at the same time, which is funny since that is what happend to day in my hometown La Paz, Bolivia. Here's a video of this <i>not so unusual</i> event:</p>
+					<details>
+						<summary>Video of rain in La Paz</summary>
+						<video controls width="900">
+							<source src="./resources/sunny_rainy.mp4" type="video/mp4" />
+						</video>
+					</details>
+				</section>
+				<br />
+				<section class="entrySong">
+					<h3>Song of the Day!</h3>
+					<p><strong>Identikit</strong> by <strong><em>Radiohead</em></strong> from the album <strong>A Moon Shaped Pool</strong></p>
+					<p>Rating: <strong>5 out of 5</strong></p>
+					<img src="./resources/a_moon_shaped_pool.jpg" alt="A Moon Shaped Pool Album Cover"/>
+					<br />
+					<audio controls>
+						<source src="./resources/Identikit.mp3" type="audio/mpeg">
+					</audio>
+				</section>
+			</div>
 		</div>
 		<hr />
-		<div id="day2">
-			<h2>Entry 2</h2>
-			<h3>Here we go again!</h3>
-			<p><strong>Friday</strong>, April 9th, 2021</p>
-			<section>
+		<div id="day2" class="entry">
+			<div class="entryHeader">
+				<h2>Entry 2</h2>
+				<p class="date"><strong>Friday</strong>, April 9th, 2021</p>
+				<h3 class="subtitle">Here we go again!</h3>
+			</div>
+			<br />
+			<section class="entryList">
 				<div>
-					<h3>Highlights:</h3>
+					<h3>Highlights</h3>
 					<ul>
 						<li>Set-up the Notion for the team project</li>
 						<li>People trying to switch to CS started getting notified</li>
@@ -89,7 +98,7 @@
 					</ul>
 				</div>
 				<div>
-					<h3>Tasks:</h3>
+					<h3>Tasks</h3>
 					<ol>
 						<li>
 							<label for="task1day2">Call Gonzalo for meeting about Alexandria.</label>
@@ -106,31 +115,36 @@
 					</ol>
 				</div>
 			</section>
-			<br />
-			<section>
-				<h3>What happened today!</h3>
-				<p>Today was a <em><b>productive</b></em> day! I had to wake up earlier than usual today because I had to go take pictures at a baptism. It was fun since the ceremony was personal and short because of pandemic protocols. The parents of the child being baptised were cooks so they prepared a fancy lunch and dessert with multiple dishes which were very interesting. After that I had to return home and keep working on fixing the tool bar of Alexandria. I had a meeting with my partner Gonzalo that day to start the proces of getting our Apple Developer License and discuss the schedules of release for Alexandria. The meeting went long so I was not able to finish the toolbar later that day either. At least I learnt more about the uses of <i>Raspberry Pi Compute Module 4</i> in linux servers and how we could build our own with a relatively low investment. I gues that like the song says, the good times do be killing me.</p>
-			</section>
-			<br />
-			<section>
-				<h3>Song of the Day!</h3>
-				<p><strong>The Good Times Are Killing Me</strong> by <strong><em>Modest Mouse</em></strong> from the album <strong>Good News For People Who Love Bad News</strong></p>
-				<p>Rating: <strong>5 out of 5</strong></p>
-				<img src="./resources/good_news.jpg" alt="Good News For People Who Love Bad News Album Cover" width="400" />
+			<div>
 				<br />
-				<audio controls>
-					<source src="./resources/good_times.mp3" type="audio/mpeg">
-				</audio>
-			</section>
+				<section class="entryMain">
+					<h3>What happened today!</h3>
+					<p>Today was a <em><b>productive</b></em> day! I had to wake up earlier than usual today because I had to go take pictures at a baptism. It was fun since the ceremony was personal and short because of pandemic protocols. The parents of the child being baptised were cooks so they prepared a fancy lunch and dessert with multiple dishes which were very interesting. After that I had to return home and keep working on fixing the tool bar of Alexandria. I had a meeting with my partner Gonzalo that day to start the proces of getting our Apple Developer License and discuss the schedules of release for Alexandria. The meeting went long so I was not able to finish the toolbar later that day either. At least I learnt more about the uses of <i>Raspberry Pi Compute Module 4</i> in linux servers and how we could build our own with a relatively low investment. I gues that like the song says, the good times do be killing me.</p>
+				</section>
+				<br />
+				<section class="entrySong">
+					<h3>Song of the Day!</h3>
+					<p><strong>The Good Times Are Killing Me</strong> by <strong><em>Modest Mouse</em></strong> from the album <strong>Good News For People Who Love Bad News</strong></p>
+					<p>Rating: <strong>5 out of 5</strong></p>
+					<img src="./resources/good_news.jpg" alt="Good News For People Who Love Bad News Album Cover"/>
+					<br />
+					<audio controls>
+						<source src="./resources/good_times.mp3" type="audio/mpeg">
+					</audio>
+				</section>
+			</div>
 		</div>
 		<hr />
-		<div id="day3">
-			<h2>Entry 3</h2>
-			<h3>Cracking the Code! @Sophie</h3>
-			<p><strong>Saturday</strong>, April 10th, 2021</p>
-			<section>
+		<div id="day3" class="entry">
+			<div class="entryHeader">
+				<h2>Entry 3</h2>
+				<p class="date"><strong>Saturday</strong>, April 10th, 2021</p>
+				<h3 class="subtitle">Cracking the Code! @Sophie</h3>
+			</div>
+			<br />
+			<section class="entryList">
 				<div>
-					<h3>Highlights:</h3>
+					<h3>Highlights</h3>
 					<ul>
 						<li>First team meeting and team building activity</li>
 						<li>Working on Discord with Sophie</li>
@@ -138,7 +152,7 @@
 					</ul>
 				</div>
 				<div>
-					<h3>Tasks:</h3>
+					<h3>Tasks</h3>
 					<ol>
 						<li>
 							<label for="task1day3">Finish CSE 140 HW 1.</label>
@@ -155,22 +169,24 @@
 					</ol>
 				</div>
 			</section>
-			<br />
-			<section>
-				<h3>What happened today!</h3>
-				<p>Today was a <em><b>happy</b></em> day! I met my CSE 110 team for the first time today. It was fun getting to know all of their backgrounds and interests in a more relaxed fashion before everything starts to get crazy, everyone seemed really interesting people. I was also able to call my girlfriend for the first time this week so that was awesome. She had a bad day, so we decided to work together so that at least we could feel each other's presence. Tomorrow we will have elections for state government so that should also be interesting. We will go out with my dog, vote, and come back to cook and eat saussage with mashed potatoes, a <i>classic</i>! I was also able to optimize file reading speeds for my app Alexandria which made me feel confident about my skills again.</p>
-			</section>
-			<br />
-			<section>
-				<h3>Song of the Day!</h3>
-				<p><strong>Jigsaw Falling Into Place</strong> by <strong><em>Radiohead</em></strong> from the album <strong>In Rainbows</strong></p>
-				<p>Rating: <strong>5 out of 5</strong></p>
-				<img src="./resources/in_rainbows.png" alt="In Rainbows Album Cover" width="400" />
+			<div>
 				<br />
-				<audio controls>
-					<source src="./resources/jigsaw.mp3" type="audio/mpeg">
-				</audio>
-			</section>
+				<section class="entryMain">
+					<h3>What happened today!</h3>
+					<p>Today was a <em><b>happy</b></em> day! I met my CSE 110 team for the first time today. It was fun getting to know all of their backgrounds and interests in a more relaxed fashion before everything starts to get crazy, everyone seemed really interesting people. I was also able to call my girlfriend for the first time this week so that was awesome. She had a bad day, so we decided to work together so that at least we could feel each other's presence. Tomorrow we will have elections for state government so that should also be interesting. We will go out with my dog, vote, and come back to cook and eat saussage with mashed potatoes, a <i>classic</i>! I was also able to optimize file reading speeds for my app Alexandria which made me feel confident about my skills again.</p>
+				</section>
+				<br />
+				<section class="entrySong">
+					<h3>Song of the Day!</h3>
+					<p><strong>Jigsaw Falling Into Place</strong> by <strong><em>Radiohead</em></strong> from the album <strong>In Rainbows</strong></p>
+					<p>Rating: <strong>5 out of 5</strong></p>
+					<img src="./resources/in_rainbows.png" alt="In Rainbows Album Cover"/>
+					<br />
+					<audio controls>
+						<source src="./resources/jigsaw.mp3" type="audio/mpeg">
+					</audio>
+				</section>
+			</div>
 		</div>
 	</main>
 	<hr />
