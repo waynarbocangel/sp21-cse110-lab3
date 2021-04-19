@@ -1,0 +1,82 @@
+/* Entry layout styles */
+.entry{
+    display: inline-block;
+    width: 60vw;
+    margin-right: 20vw;
+    margin-left: 20vw;
+}
+
+.entryHeader{
+    display: grid;
+    grid-template-columns: 10vw 40vw 10vw;
+    grid-template-rows: 90px 60px;
+    justify-content: center;
+}
+
+.entry h2{
+    text-align: center;
+    font-size: 40pt;
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: 1.5pc;
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 1;
+}
+
+.date{
+    font-size: 1rem;
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+}
+
+
+
+.entryList{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.entryList > div{
+    flex-basis: 25vw;
+}
+
+.entryList h3{
+    text-align: center;
+}
+
+.entryList + div{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    align-items: center;
+}
+
+.entryList + div h3{
+    font-size: 18pt;
+}
+
+.entryMain{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 1;
+}
+
+.entrySong{
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 1;
+    text-align: center;
+}
+
+.entrySong audio{
+    width: 15vw;
+}
+
+.entrySong img{
+    width: 15vw;
+}
+
