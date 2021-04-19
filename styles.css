@@ -1,9 +1,14 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
 /* Entry Index layout styles */
 header{
     text-align: center;
-    margin-left: 20vw;
-    margin-right: 20vw;
-    width: 60vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
 }
 
 #pageTitle{
@@ -16,15 +21,17 @@ header h2{
 }
 
 nav{
-    width: 60vw;
-    padding-left: 20vw;
-    padding-right: 20vw;
+    width: 100%;
     text-align: center;
     position: sticky;
     top: -30px;
+    justify-content: center;
 }
 
 nav ul{
+    margin-left: 20%;
+    margin-right: 20%;
+    width: 60%;
     display: flex;
     padding: 0;
     list-style: none;
@@ -39,9 +46,9 @@ nav ul li{
 /* Entry layout styles */
 .entry{
     display: inline-block;
-    width: 60vw;
-    padding-right: 20vw;
-    padding-left: 20vw;
+    width: 60%;
+    padding-right: 20%;
+    padding-left: 20%;
 }
 
 .entryHeader{
@@ -116,5 +123,49 @@ nav ul li{
 
 .entrySong img{
     width: 15vw;
+}
+
+/* Create New Entry layout styles */
+#createNewEntry{
+    text-align: center;
+    width: 60%;
+    padding-top: 40px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 40px;
+}
+
+#createNewEntry form{
+    padding-top: 40px;
+}
+
+#createNewEntry fieldset{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#createNewEntryContent{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#createNewEntryTextTitle {
+    font-size: 18pt;
+    padding-bottom: 40px;
+}
+
+#createNewEntryText textarea{
+    margin-top: 30px; 
+    width: 98%;
+}
+
+#createNewEntrySong {
+    margin-top: 30px;
+    display: block;
+}
+
+#createNewEntrySong legend{
+    font-size: 18pt;
 }
 

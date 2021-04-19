@@ -191,54 +191,62 @@
 	</main>
 	<hr />
 
-	<div>
+	<div id="createNewEntry">
 		<h1>Create new entry</h1>
 		<form>
 			<fieldset>
-				<legend>Entry data:</legend>
 				<label for="entryTitle">Title:</label>
 				<input type="text" id="entryTitle" name="entryTitle" placeholder="Here we go again!" />
 				<label for="entryDate">Date:</label>
 				<input type="date" id="entryDate" name="entryDate" />
 				<label for="adjective">My day was:</label>
 				<input type="text" id="adjective" name="adjective" placeholder="good/bad/interesting" /><br /><br />
-				<label for="entry">Entry:</label><br />
-				<textarea name="entry" id="entry" cols="80" rows="25"></textarea><br /><br />
-				<label for="attachment">Attachment(optional):</label>
-				<input type="file" id="attachment" name="attachment" /><br /><br />
-				<label for="attachmentTitle">Attachment title:</label>
-				<input type="text" id="attachmentTitle" name="attachmentTitle" placeholder="Rainy day in La Paz" /><br /><br />
-				<fieldset>
-					<legend>Song of the Day</legend>
-					<label for="songTitle">Song Title:</label>
-					<input type="text" id="songTitle" name="songTitle" />
-					<label for="songArtist">Song Artist:</label>
-					<input type="text" id="songArtist" name="songArtist" />
-					<label for="songAlbum">Song Album:</label>
-					<input type="text" id="songAlbum" name="songAlbum" /><br /><br />
-					<label for="albumCover">Album Cover:</label>
-					<input type="file" id="albumCover" name="albumCover">
-					<label for="songFile">Song File:</label>
-					<input type="file" id="songFile" name="songFile">
-					<p>Rating:</p>
-					<input type="radio" id="oneFive" name="oneFive">
-					<label for="oneFive">1</label>
-					<input type="radio" id="twoFive" name="twoFive">
-					<label for="twoFive">2</label>
-					<input type="radio" id="threeFive" name="threeFive">
-					<label for="threeFive">3</label>
-					<input type="radio" id="fourFive" name="fourFive">
-					<label for="fourFive">4</label>
-					<input type="radio" id="fiveFive" name="fiveFive">
-					<label for="fiveFive">5</label>
-				</fieldset><br />
+
+				<div id="createNewEntryContent">
+					<div id="createNewEntryText">
+						<label for="entry" id="createNewEntryTextTitle">Entry:</label><br />
+						<textarea name="entry" id="entry" cols="80" rows="25"></textarea><br /><br />
+						<label for="attachment">Attachment(optional):</label>
+						<input type="file" id="attachment" name="attachment" /><br /><br />
+						<label for="attachmentTitle">Attachment title:</label>
+						<input type="text" id="attachmentTitle" name="attachmentTitle" placeholder="Rainy day in La Paz" /><br /><br />
+					</div>
+					<div id="createNewEntrySong">
+						<fieldset>
+							<legend>Song of the Day</legend><br /><br />
+							<label for="songTitle">Title:</label>
+							<input type="text" id="songTitle" name="songTitle" />
+							<label for="songArtist">Artist:</label>
+							<input type="text" id="songArtist" name="songArtist" />
+							<label for="songAlbum">Album:</label>
+							<input type="text" id="songAlbum" name="songAlbum" /><br /><br />
+							<label for="albumCover">Cover:</label>
+							<input type="file" id="albumCover" name="albumCover">
+							<label for="songFile">File:</label>
+							<input type="file" id="songFile" name="songFile"><br /><br />
+							<p>Rating:</p>
+							<input type="radio" id="oneFive" name="oneFive">
+							<label for="oneFive">1</label>
+							<input type="radio" id="twoFive" name="twoFive">
+							<label for="twoFive">2</label>
+							<input type="radio" id="threeFive" name="threeFive">
+							<label for="threeFive">3</label>
+							<input type="radio" id="fourFive" name="fourFive">
+							<label for="fourFive">4</label>
+							<input type="radio" id="fiveFive" name="fiveFive">
+							<label for="fiveFive">5</label>
+						</fieldset><br />
+					</div>
+				</div>
+				
+
 				<label for="sharing">Sharing Settings:</label>
 				<select id="sharing" name="sharing">
 					<option value="noShare">Do not share</option>
 					<option value="facebook">Share to Facebook</option>
 					<option value="instagram">Share to Instagram</option>
 					<option value="email">Send in Newsletter</option>
-				</select><br /><br />
+				</select>
 				<label for="tagPerson">Tag a Person:</label>
 				<input list="people" name="tagPerson" id="tagPerson" />
 				<datalist id="people">
@@ -248,7 +256,7 @@
 				</datalist>
 				<input type="button" value="Send tag notification"><br /><br />
 				<label for="hidden">Hide Entry</label>
-				<input type="checkbox" id="hidden" name="hidden" /><br /><br />
+				<input type="checkbox" id="hidden" name="hidden" />
 				<input type="submit">
 			</fieldset>
 			
